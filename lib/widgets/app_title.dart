@@ -18,7 +18,7 @@ class _AppTitleState extends State<AppTitle> {
       children: [
         Align(
             alignment: Alignment.topLeft,
-            child: Text(Constants.title, style: Constants.getTitleTextStyle())
+            child: Text(Constants.title, style: Constants.getTitleTextStyle() )
         ),
         Align(
           alignment: Alignment.topRight,
