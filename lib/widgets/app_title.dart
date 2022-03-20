@@ -23,7 +23,7 @@ class _AppTitleState extends State<AppTitle> {
             padding: UIHelper.getDefaultPadding(),
             child: Align(
                 alignment: Alignment.centerLeft,
-                child: Text(Constants.title, style: Constants.getTitleTextStyle())
+                child: Text(Constants.title, style: Constants.getTitleTextStyle() )
             ),
           ),
           Align(
