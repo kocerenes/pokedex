@@ -16,4 +16,12 @@ class UIHelper{
     }
   }
 
+  static double calculatePokeImgAndBallSize(){
+    if(ScreenUtil().orientation == Orientation.portrait){
+      return 0.2.sw;
+    }else{
+      return 0.3.sh;
+    }
+  }
+
 }

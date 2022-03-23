@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pokedex/constants/constants.dart';
 import 'package:pokedex/constants/ui_helper.dart';
 import 'package:pokedex/model/pokemon.dart';
+import 'package:pokedex/widgets/poke_img_and_ball.dart';
 
 class PokeListItems extends StatelessWidget {
   final Pokedexx pokemon;
@@ -25,7 +26,8 @@ class PokeListItems extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(pokemon.name ?? 'N/A',style: Constants.getPokemonNameTextStyle(),),
-            Chip(label: Text(pokemon.type![0],style: Constants.getTypeChipTextStyle(),))
+            Chip(label: Text(pokemon.type![0],style: Constants.getTypeChipTextStyle(),)),
+            Expanded(child: PokeImgAndBall(pokemon: pokemon)),
           ],
         ),
       ),
